@@ -1,4 +1,6 @@
 Ajoneuvoforum1::Application.routes.draw do
+  resources :microposts
+
   resources :ilmoituksets
 
   resources :ilmoitus
