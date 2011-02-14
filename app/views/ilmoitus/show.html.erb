@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Tyyppi:</b>
+  <%= @ilmoitu.tyyppi %>
+</p>
+
+<p>
+  <b>Merkki:</b>
+  <%= @ilmoitu.merkki %>
+</p>
+
+<p>
+  <b>Malli:</b>
+  <%= @ilmoitu.malli %>
+</p>
+
+
+<%= link_to 'Edit', edit_ilmoitu_path(@ilmoitu) %> |
+<%= link_to 'Back', ilmoitus_path %>

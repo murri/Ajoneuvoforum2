@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  tyyppi: MyString
+  merkki: MyString
+  malli: MyString
+
+two:
+  tyyppi: MyString
+  merkki: MyString
+  malli: MyString

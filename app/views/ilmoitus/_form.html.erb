@@ -1,0 +1,29 @@
+<%= form_for(@ilmoitu) do |f| %>
+  <% if @ilmoitu.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@ilmoitu.errors.count, "error") %> prohibited this ilmoitu from being saved:</h2>
+
+      <ul>
+      <% @ilmoitu.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :tyyppi %><br />
+    <%= f.text_field :tyyppi %>
+  </div>
+  <div class="field">
+    <%= f.label :merkki %><br />
+    <%= f.text_field :merkki %>
+  </div>
+  <div class="field">
+    <%= f.label :malli %><br />
+    <%= f.text_field :malli %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
